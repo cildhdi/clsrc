@@ -66,7 +66,7 @@ function getContent(url) {
     return JSON.stringify({
         success: true,
         data: {
-            content: toJsStr(Util.replaceTag(content.text()))
+            content: toJsStr(Util.replaceTag(content.html()))
         }
     });
 }
